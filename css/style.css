@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 40px;
+}
+
+.instagram-page {
+    width: 100%;
+    display: flex;
+    margin-top: 43px;
+}
+
+
+/* ---------- Configurações do lado Celular ---------- */
+.mobile-side {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 49%;
+}
+.mobile-side img {
+    max-height: 600px;
+}
+
+
+
+/* ---------- Configurações do lado Formulário ---------- */
+.form-side {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin-left: 35px;
+    margin-right: 500px;
+    text-align: center;
+}
+.first-form {
+    min-width: 300px;
+    border: 1px solid #CCC;
+}
+.first-form .logo-instagram {
+    max-width: 175px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.first-form input{
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    min-width: 75%;
+    height: 37px;
+    padding-left: 10px;
+    font-size: 11px;
+}
+.first-form .button{
+    background-color: #B0D5FF;
+    color: #FFF;
+    border: none;
+    margin-top: 14px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.first-form .button:hover{
+    background-color: aqua;
+}
+.division {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    font-size: 12px;
+}
+.linha1 {
+    content: "";
+    height: 1px;
+    width: 29%;
+    background-color: #CCC;
+    margin: 0 20px;
+}
+.linha2 {
+    content: "";
+    height: 1px;
+    width: 29%;
+    background-color: #CCC;
+    margin: 0 20px;
+}
+.facebook {
+    display: flex;
+    justify-content: center;
+    color: #475993;
+    font-weight: 600;
+    letter-spacing: 0.02;
+    font-size: 14px;
+}
+.facebook img {
+    /*background-color: tomato;*/
+    width: 30px;
+    height: 30px;
+}
+.esqueceu-senha {
+    display: flex;
+    justify-content: center;
+    /*background-color: greenyellow;*/
+    margin-bottom: 8px;
+    color: #475993;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02;
+}
+.second-form {
+    height: 60px;
+    border: 1px solid #acacac;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+/* ---------- Lojas App ---------- */
+.getApps {
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.store{
+    display: flex;
+    justify-content: space-around;
+}
+
+.appleStore {
+    width: 140px;
+    height: 100px; 
+    background: url('../assets/img/appleStore.png') no-repeat;
+    background-size: contain;
+}
+.playStore {
+    width: 140px;
+    height: 100px; 
+    background: url('../assets/img/playStore.png') no-repeat;
+    background-size: contain;
+}
+
+
+/* ---------- Rodapé ---------- */
+.footer-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 345px 0 345px;
+    color: #555;
+    font-size: 11px;
+    min-width: 300px;
+}
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-container a {
+    margin: 8px 10px 0 10px;
+    color: #808080;
+    line-height: 20px;
+}
+.information {
+    display: flex;
+}
+.information span {
+    margin: 15px 20px;
+}
+
+
+
+
+/* ---------- Responsividade ---------- */
+@media(max-width: 850px) {
+    .form-side {
+        width: 42%;
+        margin: auto;
+    }
+    .mobile-side {
+        display: none;
+    }
+    .footer-container {
+        width: 42%;
+        margin: auto;
+    }
+
+    .footer-list {
+        display: none;
+    }
+    .information {
+        flex-direction: column;
+    }
+    .information span{
+        margin: auto;
+        line-height: 22px;
+    }
+}
